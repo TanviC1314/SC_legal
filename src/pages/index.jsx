@@ -5,13 +5,12 @@ import '../assets/vendor/bootstrap-icons/bootstrap-icons.css';
 import '../assets/vendor/swiper/swiper-bundle.min.css';
 import '../assets/vendor/glightbox/css/glightbox.min.css';
 import '../assets/vendor/aos/aos.css';
-import '../assets/css/main.css';
 import '../assets/css/desc.css';
 import '../assets/css/media.css';
 import '../assets/css/onepage-scroll.css';
 
 const Index = () => {
-  const [isAccepted, setIsAccepted] = useState(false);
+  const [isAccepted, setIsAccepted] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

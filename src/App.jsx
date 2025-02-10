@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Index from './pages/index'
 import Home from './pages/home'
-import HomeOld from './pages/home_old'
 import Founder from './pages/founder'
 import Contact from './pages/contact'
 import Careers from './pages/careers'
@@ -18,7 +17,6 @@ function App() {
         <Route exact path="/" element={<Index />} />
         <Route path="/" element={<Index />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/home_old" element={<HomeOld />} />
         <Route path="/founder" element={<Founder />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/careers" element={<Careers />} />
