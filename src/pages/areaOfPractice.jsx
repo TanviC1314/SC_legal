@@ -5,16 +5,16 @@ function AreaOfPractice() {
     <div>
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
-          <a href="home.html" className="logo d-flex align-items-center me-auto me-lg-0">
+          <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="" />
           </a>
           <nav id="navbar" className="navbar">
             <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="founder.html">Founder</a></li>
-              <li><a href="areaOfPractice.html" className="active">Area of Practice</a></li>
-              <li><a href="careers.html">Career</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="home">Home</a></li>
+              <li><a href="founder">Founder</a></li>
+              <li><a href="areaOfPractice" className="active">Area of Practice</a></li>
+              <li><a href="careers">Career</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul>
           </nav>
           <div className="header-social-links">
@@ -25,7 +25,7 @@ function AreaOfPractice() {
         </div>
       </header>
       <br /><br /><br />
-      <main id="main" data-aos="fade" data-aos-delay="1500">
+      <main id="main">
         <div className="page-header d-flex align-items-center">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">

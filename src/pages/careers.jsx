@@ -1,25 +1,21 @@
 import React from 'react'
-import '../assets/vendor/bootstrap/css/bootstrap.min.css'
-import '../assets/vendor/bootstrap-icons/bootstrap-icons.css'
-import '../assets/vendor/swiper/swiper-bundle.min.css'
-import '../assets/vendor/glightbox/css/glightbox.min.css'
-import '../assets/vendor/aos/aos.css'
+import '../assets/css/main.css'
 
 function Careers() {
   return (
     <div>
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
-          <a href="home.html" className="logo d-flex align-items-center me-auto me-lg-0">
+          <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="sc" />
           </a>
           <nav id="navbar" className="navbar">
             <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="founder.html">Founder</a></li>
-              <li><a href="areaOfPractice.html">Area of Practice</a></li>
-              <li><a href="careers.html" className="active">Career</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="home">Home</a></li>
+              <li><a href="founder">Founder</a></li>
+              <li><a href="areaOfPractice">Area of Practice</a></li>
+              <li><a href="careers" className="active">Career</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul>
           </nav>
           <div className="header-social-links">
@@ -30,7 +26,7 @@ function Careers() {
         </div>
       </header>
       <br /><br /><br />
-      <main id="main" data-aos="fade" data-aos-delay="1500">
+      <main id="main">
         <div className="page-header d-flex align-items-center">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">
@@ -44,7 +40,7 @@ function Careers() {
           <div className="container">
             <div className="row justify-content-center mt-4">
               <div className="col-lg-9">
-                <form action="forms/career.php" method="post" role="form" className="php-email-form">
+                <form action="" method="post" role="form" className="php-email-form">
                   <div className="row">
                     <div className="col-md-6 form-group">
                       <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />

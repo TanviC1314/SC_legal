@@ -40,27 +40,27 @@ function Home() {
             <div className="collapse navbar-collapse" id="ftco-nav">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a href="index.html" className="nav-link">
+                  <a href="index" className="nav-link">
                     HOME
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="founder.html" className="nav-link">
+                  <a href="founder" className="nav-link">
                     PARTNERS
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="areaOfPractice.html" className="nav-link">
+                  <a href="areaOfPractice" className="nav-link">
                     AREA OF PRACTICE
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="careers.html" className="nav-link">
+                  <a href="careers" className="nav-link">
                     CAREER
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="contact.html" className="nav-link">
+                  <a href="contact" className="nav-link">
                     CONTACT
                   </a>
                 </li>
