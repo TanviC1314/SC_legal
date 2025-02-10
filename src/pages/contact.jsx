@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../assets/css/main.css'
 
-function contact() {
+function Contact() {
   const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
@@ -172,4 +172,4 @@ function contact() {
   )
 }
 
-export default contact
+export default Contact
