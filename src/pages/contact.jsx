@@ -8,6 +8,11 @@ function Contact() {
           setIsLoading(false);
         }, 1500);
       }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isLoading ? 'hidden' : 'auto';
+  }, [isLoading]);
+
   return (
     <div>
   
@@ -153,7 +158,8 @@ function Contact() {
           alignItems: 'center',
           zIndex: 2000,
           transition: 'opacity 0.5s ease-in-out',
-          opacity: isLoading ? '1' : '0'
+          opacity: isLoading ? '1' : '0',
+          overflow: 'hidden'
         }}
       >
         <div className="line"></div>

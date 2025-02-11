@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 function AreaOfPractice() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isLoading ? 'hidden' : 'auto';
+  }, [isLoading]);
+
   return (
     <div>
+      <div 
+        id="preloader"
+        style={{
+          display: isLoading ? 'flex' : 'none',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'white',
+          justifyContent: 'center',
+          alignItems: 'center',
+          zIndex: 2000,
+          transition: 'opacity 0.5s ease-in-out',
+          opacity: isLoading ? '1' : '0',
+          overflow: 'hidden'
+        }}
+      >
+        <div className="line"></div>
+      </div>
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
