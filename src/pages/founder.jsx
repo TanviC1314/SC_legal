@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../assets/css/main.css'
+import "./founder.css";
 
 function Founder() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +23,7 @@ function Founder() {
     <div className="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="home" className="logo d-flex align-items-center  me-auto me-lg-0">
-        <img src="assets/img/SC_Logo.png" alt="" />
+        <img style={{height:"100px"}} src="assets/img/SC_Logo.png" alt="" />
       </a>
 
       <nav id="navbar" className="navbar">
@@ -49,7 +50,7 @@ function Founder() {
 
   <main id="main">
 
-    <div className="page-header d-flex align-items-center">
+    {/* <div className="page-header d-flex align-items-center">
       <div className="container position-relative">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 text-center">
@@ -57,10 +58,19 @@ function Founder() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     <section id="about" className="about">
       <div className="container">
+      {/* <div className="page-header d-flex align-items-center"> */}
+      <div className="container position-relative">
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-6 text-center">
+            <h2 style={{fontSize:60, marginBottom:100}}>Partners</h2>
+          </div>
+        </div>
+      </div>
+    {/* </div> */}
         <div className="row gy-4 justify-content-center">
           <div className="col-lg-5 content">
             <h2>Parichay Sharma</h2>
@@ -107,10 +117,7 @@ function Founder() {
 
   </main>
 
-  <footer id="footer" className="footer">
-    <div className="container">
-    </div>
-  </footer>
+  
 
   <a href="#" className="scroll-top d-flex align-items-center justify-content-center"><i
       className="bi bi-arrow-up-short"></i></a>

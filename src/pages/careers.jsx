@@ -58,17 +58,16 @@ function Careers() {
       </header>
       <br /><br /><br />
       <main id="main">
-        <div className="page-header d-flex align-items-center">
+        
+        <section id="contact" className="contact">
+          <div className="container">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">
               <div className="col-lg-6 text-center">
-                <h2>Career</h2>
+                <h2 style={{fontSize:60, marginBottom:50,marginTop:40}}>Career</h2>
               </div>
             </div>
           </div>
-        </div>
-        <section id="contact" className="contact">
-          <div className="container">
             <div className="row justify-content-center mt-4">
               <div className="col-lg-9">
                 <form action="" method="post" role="form" className="php-email-form">

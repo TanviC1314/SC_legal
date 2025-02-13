@@ -57,18 +57,17 @@ function AreaOfPractice() {
       </header>
       <br /><br /><br />
       <main id="main">
-        <div className="page-header d-flex align-items-center">
+       
+        <section id="services" className="services">
+          <div className="container">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">
               <div className="col-lg-6 text-center">
                 <br />
-                <h2>Area of Practice</h2>
+                <h2 style={{fontSize:60, marginBottom:30}}>Area of Practice</h2>
               </div>
             </div>
           </div>
-        </div>
-        <section id="services" className="services">
-          <div className="container">
             <div className="row gy-4">
               <div className="col-xl-3 col-md-6 d-flex">
                 <div className="service-item position-relative">
