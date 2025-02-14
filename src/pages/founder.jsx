@@ -19,7 +19,7 @@ function Founder() {
 
 <div>
 
-  <header id="header" className="header d-flex align-items-center fixed-top">
+  <header style={{marginTop:"-20px", marginBottom:"-100px"}} id="header" className="header d-flex align-items-center fixed-top">
     <div className="container-fluid d-flex align-items-center justify-content-between">
 
       <a href="home" className="logo d-flex align-items-center  me-auto me-lg-0">

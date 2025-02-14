@@ -1,11 +1,11 @@
 /* General Styles */
 .header {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(250, 249, 209, 0.98);
+    
   }
   
   .header .logo img {
-    max-height: 60px;
+    max-height: 120px; /* Increased from 60px to 80px */
     transition: all 0.3s ease;
   }
   
@@ -35,7 +35,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: #333;
     transition: 0.3s;
@@ -44,48 +44,63 @@
   
   .navbar a:hover,
   .navbar .active {
-    color: #0056b3;
+    color: #DABA6D;
+    transform: none; /* Remove transformation */
+    transition: none; /* Remove transition */
+     /* Move to the left side */
   }
+
+
   
   .navbar a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background: #0056b3;
+    background: #DABA6D;
+   
     bottom: 0;
     left: 0;
-    transition: width 0.3s ease-in-out;
   }
+  
   
   .navbar a:hover::after,
   .navbar .active::after {
-    width: 100%;
+    margin-left: 5px;
+    width: 90%;
+    color: #DABA6D;
   }
+  .navbar .active::after {
+    width: 90%;
+    color: #DABA6D;
+  }
+  
   
   /* Social Links */
   .header-social-links {
     padding-left: 20px;
   }
+
   
   .header-social-links a {
     color: #333;
     padding: 10px;
     display: inline-block;
     line-height: 0;
-    transition: 0.3s;
+    /* transition: 0.3s; */
     font-size: 20px;
   }
   
   .header-social-links a:hover {
-    color: #0056b3;
-    transform: translateY(-2px);
+    color: #DABA6D;
+    transform: none; /* Remove transformation */
+    transition: none; /* Remove transition */
   }
   
   /* Page Header */
   .page-header {
     padding: 120px 0 60px;
-    min-height: 30vh;
+    min-height: 10vh;
     position: relative;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
       url('../assets/img/header-bg.jpg') center center/cover;
@@ -154,7 +169,7 @@
   .about .content ul i {
     font-size: 16px;
     margin-right: 10px;
-    color: #0056b3;
+    color: #DABA6D;
   }
   
   .about .content ul strong {
@@ -168,7 +183,7 @@
   }
   
   .about .content ul a:hover {
-    color: #0056b3;
+    color: #DABA6D;
   }
   
   .about .Image-fluid {
@@ -192,7 +207,7 @@
     right: 15px;
     bottom: 15px;
     z-index: 99;
-    background: #0056b3;
+    background: #DABA6D;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -276,7 +291,7 @@
   
   @media (max-width: 576px) {
     .header .logo img {
-      max-height: 50px;
+      max-height: 70px; /* Increased from 50px to 70px */
     }
   
     .page-header {

@@ -50,10 +50,11 @@ const Index = () => {
               paddingBottom: '10px'
             }}
           >
+            <br/>
             <p style={{
               fontSize: '24px',
               fontWeight: '600',
-              color: '#FFD700',
+              color: '#DABA6D',
               margin: 0
             }}>
               Disclaimer
@@ -132,7 +133,7 @@ const Index = () => {
               onClick={(e) => !isAccepted && e.preventDefault()}
               style={{
                 padding: '10px 30px',
-                backgroundColor: '#FFD700',
+                backgroundColor: '#DABA6D',
                 color: '#333',
                 borderRadius: '4px',
                 textDecoration: 'none',

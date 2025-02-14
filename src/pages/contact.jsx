@@ -54,6 +54,7 @@ function Contact() {
       <div className="container position-relative">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 text-center">
+            <br/>
             <h2 style={{fontSize:60, marginBottom:30,marginTop:30}}>Contact</h2>
             <div style={{ marginBottom:50}} className="responsive-map-container">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.8622367466583!2d72.8346857!3d19.1575067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b74bb07961db%3A0xaf5a042da8b76611!2sSC%20Legal!5e0!3m2!1sen!2sin!4v1667476141729!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

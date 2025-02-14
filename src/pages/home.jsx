@@ -64,12 +64,12 @@ function Home() {
   }, [displayText, currentWordIndex, isDeleting]);
 
   return (
-    <div className="home-container" style={{ fontFamily: '"Poppins", Arial, sans-serif' }}>
-      <div className="background-overlay"></div>
+    <div className="home-container" style={{ fontFamily: '"Poppins", Arial, sans-serif', paddingBottom:"-100px" }}>
+      <div className="background-overlay" style={{ backgroundImage: "url('/assets/img/practice-1.jpg')" }}></div>
       
       <nav style={{marginTop:"20px", fontSize:"15px"}} className="navbar px-md-0 navbar-expand-lg navbar-light ftco-navbar-light" id="ftco-navbar">
         <div className="container" style={{ height: 100, color: "#a42c2c"}}>
-          <img style={{marginTop:"30px",marginLeft:"-10px"}} src="assets/img/SC_Logo.png" alt="" height="160" />
+          <img style={{marginTop:"30px",marginLeft:"-10px"}} src="/assets/img/SC_Logo.png" alt="" height="160" />
           <a  className="navbar-brand" href="/home">
            <span style={{ 
   marginTop: "20px",
@@ -160,7 +160,7 @@ function Home() {
       </div>
 
       <footer id="footer" className="footer" style={{ backgroundColor: 'black', marginTop: 100, width: '100%' }}>
-  <div className="container">
+  <div  className="container"> {/* Adjusted paddingBottom to 0 */}
     <div className="footer-content">
       <div className="footer-section">
         <h3>About SC Legal</h3>

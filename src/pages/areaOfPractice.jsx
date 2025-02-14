@@ -23,7 +23,7 @@ function AreaOfPractice() {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'white',
+          backgroundColor: ' #DABA6D',
           justifyContent: 'center',
           alignItems: 'center',
           zIndex: 2000,
@@ -32,14 +32,14 @@ function AreaOfPractice() {
           overflow: 'hidden'
         }}
       >
-        <div className="line"></div>
+        <div  className="line"></div>
       </div>
-      <header id="header" className="header d-flex align-items-center fixed-top">
+      <header style={{background: 'white'}} id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="" />
           </a>
-          <nav id="navbar" className="navbar">
+          <nav  id="navbar" className="navbar">
             <ul>
               <li><a href="home">Home</a></li>
               <li><a href="founder">Founder</a></li>
@@ -56,9 +56,9 @@ function AreaOfPractice() {
         </div>
       </header>
       <br /><br /><br />
-      <main id="main">
+      <main  id="main">
        
-        <section id="services" className="services">
+        <section  id="services" className="services">
           <div className="container">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">
