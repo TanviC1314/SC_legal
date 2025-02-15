@@ -79,19 +79,19 @@ function Home() {
       <header id="header" className="header d-flex align-items-center fixed-top" style={{ backgroundColor: isMobileNavActive ? 'rgb(218, 186, 109)' : 'transparent' }}>
         <div className="container-fluid d-flex align-items-center justify-content-between">
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
-            <img style={{height:"100px"}} src="/assets/img/SC_Logo.png" alt="" />
+            <img style={{height:"200px"}} src="/assets/img/SC_Logo.png" alt="" />
           </a>
 
           <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
-              <li><a href="home" style={{ color: 'black' }}>Home</a></li>
-              <li><a href="founder" style={{ color: 'black' }}>Partners</a></li>
-              <li><a href="areaOfPractice" style={{ color: 'black' }}>Area of Practice</a></li>
-              <li><a href="careers" style={{ color: 'black' }}>Career</a></li>
-              <li><a href="contact" style={{ color: 'black' }}>Contact</a></li>
+              <li><a href="home" style={{ color: 'white' }}>Home</a></li>
+              <li><a href="founder" style={{ color: 'white' }}>Partners</a></li>
+              <li><a href="areaOfPractice" style={{ color: 'white' }}>Area of Practice</a></li>
+              <li><a href="careers" style={{ color: 'white' }}>Career</a></li>
+              <li><a href="contact" style={{ color: 'white' }}>Contact</a></li>
             </ul>
             <div className="header-social-links">
-              <a href="https://www.linkedin.com/in/sc-legal" className="linkedin" style={{ color: 'black' }}><i className="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/sc-legal" className="linkedin" style={{ color: 'white' }}><i className="bi bi-linkedin"></i></a>
             </div>
           </nav>
 
@@ -146,8 +146,8 @@ function Home() {
         </div>
       </div>
 
-      <footer id="footer" className="footer" style={{ backgroundColor: 'black', marginTop: 100, width: '100%' }}>
-        <div className="container">
+      <footer id="footer" className="" style={{ backgroundColor: 'black', marginTop: "1rem", width: '100%' }}>
+        <div className="container" style={{marginTop: "1rem"}}>
           <div className="footer-content">
             <div className="footer-section">
               <h3>About SC Legal</h3>

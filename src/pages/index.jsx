@@ -23,13 +23,13 @@ const Index = () => {
     <>
       <header id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
-          <Link to="/home" className="logo d-flex align-items-center me-auto me-lg-0">
+          <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="/assets/img/SC_Logo.png" alt="SC Logo" />
           </Link>
         </div>
       </header>
 
-      <div className="disclaimer-container" style={{ paddingTop: '100px' }}>
+      <div className="disclaimer-container" style={{ paddingTop: '100px', maxHeight: '80vh', overflowY: 'auto' }}>
         <div 
           className="disclaimer-box"
           style={{
@@ -89,7 +89,7 @@ const Index = () => {
             <input
               type="checkbox"
               checked={isAccepted}
-              onChange={(e) => setIsAccepted(e.target.checked)}
+              onChange={(e) => setIsAccepted(true)}
               id="accept"
               required
               style={{
