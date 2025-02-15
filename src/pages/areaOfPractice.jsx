@@ -44,7 +44,7 @@ function AreaOfPractice() {
       >
         <div  className="line"></div>
       </div>
-      <header style={{background: 'white'}} id="header" className="header d-flex align-items-center fixed-top">
+      <header style={{background: '#fffdd0'}} id="header" className="header d-flex align-items-center fixed-top">
         <div className="container-fluid d-flex align-items-center justify-content-between">
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="" />
@@ -53,7 +53,7 @@ function AreaOfPractice() {
             <ul>
               <li><a href="home">Home</a></li>
               <li><a href="founder">Founder</a></li>
-              <li><a href="areaOfPractice" className="active">Area of Practice</a></li>
+              <li><a href="areaOfPractice" className="">Area of Practice</a></li>
               <li><a href="careers">Career</a></li>
               <li><a href="contact">Contact</a></li>
             </ul>
@@ -71,7 +71,7 @@ function AreaOfPractice() {
       <br /><br /><br />
       <main  id="main">
        
-        <section  id="services" className="services">
+        <section  id="services" className="services" style={{background: '#fffdd0'}}>
           <div className="container">
           <div className="container position-relative">
             <div className="row d-flex justify-content-center">

@@ -84,14 +84,14 @@ function Home() {
 
           <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
-              <li><a href="home" style={{ color: 'white' }}>Home</a></li>
-              <li><a href="founder" style={{ color: 'white' }}>Partners</a></li>
-              <li><a href="areaOfPractice" style={{ color: 'white' }}>Area of Practice</a></li>
-              <li><a href="careers" style={{ color: 'white' }}>Career</a></li>
-              <li><a href="contact" style={{ color: 'white' }}>Contact</a></li>
+              <li><a href="home" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Home</a></li>
+              <li><a href="founder" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Partners</a></li>
+              <li><a href="areaOfPractice" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Area of Practice</a></li>
+              <li><a href="careers" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Career</a></li>
+              <li><a href="contact" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Contact</a></li>
             </ul>
             <div className="header-social-links">
-              <a href="https://www.linkedin.com/in/sc-legal" className="linkedin" style={{ color: 'white' }}><i className="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/sc-legal" className={` linkedin ${isMobileNavActive ?'text-black':'text-white'}`}><i className="bi bi-linkedin"></i></a>
             </div>
           </nav>
 
@@ -153,7 +153,7 @@ function Home() {
               <h3>About SC Legal</h3>
               <div className="company-info">
                 <h4>SC Legal<span>A Law Firm</span></h4>
-                <p>SC Legal was founded in the year 2022 by Advocate Ankita Chatterjee and Advocate Parichay Sharma. As a law firm, SC Legal offers various legal services extending from Litigation, Arbitration, Banking and Financial Services, Real Estate and Commercial Disputes.</p>
+                <p>SC Legal was founded in the year 2022 by Advocate Parichay Sharma. As a law firm, SC Legal offers various legal services extending from Litigation, Arbitration, Banking and Financial Services, Real Estate and Commercial Disputes.</p>
                 <p>We have a varied clientele ranging from banks, financial institutions, property developers, firms as well as individuals.</p>
               </div>
             </div>
@@ -217,22 +217,6 @@ function Home() {
                 
                 <div className="contact-item-wrapper">
                   <a 
-                    href="tel:+919619560167" 
-                    className="contact-item"
-                  >
-                    <i className="phone-icon fas fa-phone"></i>
-                    <span>+91 96195 60167</span>
-                  </a>
-                  <a 
-                    href="tel:+919619560167"
-                    className="action-icon"
-                  >
-                    
-                  </a>
-                </div>
-                
-                <div className="contact-item-wrapper">
-                  <a 
                     href="mailto:parichay@sc-legal.in" 
                     className="contact-item"
                   >
@@ -244,22 +228,6 @@ function Home() {
                     className="action-icon"
                   >
                     
-                  </a>
-                </div>
-                
-                <div className="contact-item-wrapper">
-                  <a 
-                    href="mailto:ankita@sc-legal.in" 
-                    className="contact-item"
-                  >
-                    <i className="email-icon fas fa-envelope"></i>
-                    <span>ankita@sc-legal.in</span>
-                  </a>
-                  <a 
-                    href="mailto:ankita@sc-legal.in"
-                    className="action-icon"
-                  >
-                   
                   </a>
                 </div>
               </div>
