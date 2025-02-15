@@ -437,17 +437,5 @@ body, html {
   color: #2196F3;
 }
 
-/* Make sure links are clear on mobile */
-@media (max-width: 768px) {
-  .contact-item-wrapper {
-    padding: 0.75rem 0;
-  }
-  
-  .contact-item span {
-    font-size: 0.95rem;
-  }
-  
-  .action-icon i {
-    font-size: 1.6rem;
-  }
-}
+
+

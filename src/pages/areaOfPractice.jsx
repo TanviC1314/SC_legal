@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 function AreaOfPractice() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobileNavActive, setIsMobileNavActive] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -11,6 +13,14 @@ function AreaOfPractice() {
   useEffect(() => {
     document.body.style.overflow = isLoading ? 'hidden' : 'auto';
   }, [isLoading]);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavActive(!isMobileNavActive);
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      navbar.classList.toggle('mobile-nav-active');
+    }
+  };
 
   return (
     <div>
@@ -39,7 +49,7 @@ function AreaOfPractice() {
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="" />
           </a>
-          <nav  id="navbar" className="navbar">
+          <nav  id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
               <li><a href="home">Home</a></li>
               <li><a href="founder">Founder</a></li>
@@ -47,12 +57,15 @@ function AreaOfPractice() {
               <li><a href="careers">Career</a></li>
               <li><a href="contact">Contact</a></li>
             </ul>
+            <div className="header-social-links">
+              <a href="https://www.linkedin.com/in/sc-legal" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            </div>
           </nav>
-          <div className="header-social-links">
-            <a href="https://www.linkedin.com/in/sc-legal" className="linkedin"><i className="bi bi-linkedin"></i></a>
-          </div>
-          <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-          <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+          <i 
+            className={`mobile-nav-toggle ${isMobileNavActive ? 'bi bi-x mobile-nav-hide' : 'bi bi-list mobile-nav-show'}`}
+            onClick={toggleMobileNav}
+          ></i>
         </div>
       </header>
       <br /><br /><br />

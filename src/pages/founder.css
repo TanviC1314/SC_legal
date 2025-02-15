@@ -75,10 +75,11 @@
     color: #DABA6D;
   }
   
-  
   /* Social Links */
   .header-social-links {
     padding-left: 20px;
+    position: relative;
+    z-index: 1000; /* Ensure LinkedIn icon is above other elements */
   }
 
   
@@ -230,71 +231,140 @@
     line-height: 0;
   }
   
+  /* Mobile Navigation */
+  .mobile-nav-toggle {
+    display: none;
+    color: #333;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.3s;
+    position: fixed;
+    right: 15px;
+    top: 25px;
+    z-index: 9999;
+  }
+  
   /* Responsive Design */
   @media (max-width: 991px) {
-    .navbar ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.98);
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    }
-  
-    .navbar ul.active {
+    .mobile-nav-toggle {
       display: block;
     }
   
-    .navbar li {
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -100%;
       width: 100%;
+      max-width: 300px;
+      height: 100vh;
+      background: rgba(250, 249, 209, 0.98);
+      padding: 60px 0 0 0;
+      transition: right 0.3s ease;
+      z-index: 999;
+      overflow-y: auto;
+    }
+  
+    .navbar.mobile-nav-active {
+      right: 0;
+    }
+  
+    .navbar ul {
+      display: block;
+      padding: 0 15px;
+    }
+  
+    .navbar li {
+      padding: 0;
+      margin: 0;
     }
   
     .navbar a {
-      padding: 15px;
+      display: block;
+      font-size: 14px;
+      padding: 15px 0;
     }
   
-    .mobile-nav-toggle {
-      display: block !important;
-      font-size: 22px;
-      cursor: pointer;
-      color: #333;
+    .navbar a::after {
+      display: none;
     }
   
     .header-social-links {
-      padding: 0 15px;
+      display: none; /* Hide LinkedIn icon in header */
+    }
+  
+    .navbar .header-social-links {
+      display: block; /* Show LinkedIn icon inside navbar */
+      padding: 15px;
     }
   
     .about .content {
       margin-bottom: 30px;
     }
-    
+  
     .about .content .row {
       flex-direction: column;
     }
-    
+  
     .about .content ul {
-      flex-direction: column;
-      gap: 10px;
+      margin-bottom: 20px;
     }
   }
   
   @media (max-width: 768px) {
-    .page-header h2 {
-      font-size: 36px;
+    .header .logo img {
+      max-height: 80px;
     }
   
     .about .content h2 {
       font-size: 28px;
     }
+  
+    .page-header h2 {
+      font-size: 36px;
+    }
+  
+    .about .content {
+      padding: 20px;
+    }
   }
   
   @media (max-width: 576px) {
     .header .logo img {
-      max-height: 70px; /* Increased from 50px to 70px */
+      max-height: 60px;
     }
   
-    .page-header {
-      padding: 100px 0 40px;
+    .mobile-nav-toggle {
+      top: 15px;
     }
+  
+    .about .content h2 {
+      font-size: 24px;
+    }
+  
+    .about .content p {
+      font-size: 14px;
+    }
+  
+    .about .content ul li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .about .content ul li strong {
+      margin-bottom: 5px;
+    }
+  }
+  
+  /* Mobile Navigation JavaScript Support */
+  .mobile-nav-active .mobile-nav-toggle {
+    position: fixed;
+  }
+  
+  .mobile-nav-active .navbar {
+    right: 0;
+  }
+  
+  .mobile-nav-toggle.bi-x {
+    color: #333;
   }

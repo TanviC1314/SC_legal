@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/css/main.css'
+import '../assets/css/main.css';
 
 function Careers() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobileNavActive, setIsMobileNavActive] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -12,6 +14,14 @@ function Careers() {
   useEffect(() => {
     document.body.style.overflow = isLoading ? 'hidden' : 'auto';
   }, [isLoading]);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavActive(!isMobileNavActive);
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      navbar.classList.toggle('mobile-nav-active');
+    }
+  };
 
   return (
     <div>
@@ -40,7 +50,7 @@ function Careers() {
           <a href="home" className="logo d-flex align-items-center me-auto me-lg-0">
             <img src="assets/img/SC_Logo.png" alt="sc" />
           </a>
-          <nav id="navbar" className="navbar">
+          <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
               <li><a href="home">Home</a></li>
               <li><a href="founder">Founder</a></li>
@@ -48,12 +58,14 @@ function Careers() {
               <li><a href="careers" className="active">Career</a></li>
               <li><a href="contact">Contact</a></li>
             </ul>
+            <div className="header-social-links">
+              <a href="https://www.linkedin.com/in/sc-legal" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            </div>
           </nav>
-          <div className="header-social-links">
-            <a href="https://www.linkedin.com/in/sc-legal" className="linkedin"><i className="bi bi-linkedin"></i></a>
-          </div>
-          <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-          <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+          <i 
+            className={`mobile-nav-toggle ${isMobileNavActive ? 'bi bi-x mobile-nav-hide' : 'bi bi-list mobile-nav-show'}`}
+            onClick={toggleMobileNav}
+          ></i>
         </div>
       </header>
       <br /><br /><br />
