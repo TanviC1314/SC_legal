@@ -85,7 +85,7 @@ function Home() {
           <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
               <li><a href="home" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Home</a></li>
-              <li><a href="founder" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Partners</a></li>
+              <li><a href="founder" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Founder</a></li>
               <li><a href="areaOfPractice" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Area of Practice</a></li>
               <li><a href="careers" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Career</a></li>
               <li><a href="contact" className={`${isMobileNavActive ?'text-black':'text-white'}`}>Contact</a></li>
@@ -242,7 +242,7 @@ function Home() {
               <div className="col-md-6 text-md-end">
                 <ul className="footer-links">
                   <li><a href="home">Home</a></li>
-                  <li><a href="founder">Partners</a></li>
+                  <li><a href="founder">Founder</a></li>
                   <li><a href="areaOfPractice">Area of Practice</a></li>
                   <li><a href="careers">Career</a></li>
                   <li><a href="contact">Contact</a></li>

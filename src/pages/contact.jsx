@@ -36,7 +36,7 @@ function Contact() {
         <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
           <ul>
             <li><a href="home">Home</a></li>
-          <li><a href="founder">Partners</a></li>
+          <li><a href="founder">Founder</a></li>
           <li><a href="areaOfPractice">Area of Practice</a></li>
           <li><a href="careers">Career</a></li>
           <li><a href="contact" className="active">Contact</a></li>

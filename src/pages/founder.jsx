@@ -35,7 +35,7 @@ function Founder() {
           <nav id="navbar" className={`navbar ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
               <li><a href="home">Home</a></li>
-              <li><a href="founder" className="active">Partners</a></li>
+              <li><a href="founder" className="active">Founder</a></li>
               <li><a href="areaOfPractice">Area of Practice</a></li>
               <li><a href="careers">Career</a></li>
               <li><a href="contact">Contact</a></li>
@@ -62,7 +62,7 @@ function Founder() {
             <div className="container position-relative">
               <div className="row d-flex justify-content-center">
                 <div className="col-lg-6 text-center">
-                  <h2 style={{fontSize:60, marginBottom:100}}>Partners</h2>
+                  <h2 style={{fontSize:60, marginBottom:100}}>Founder</h2>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ function Founder() {
               <div className="col-lg-5 content">
                 <h2>Parichay Sharma</h2>
                 <p className="fst-italic py-3">
-                  Our Partners Advocate Parichay Sharma is an articulate and efficient lawyer with demonstrated experience in
+                  Our Founder Advocate Parichay Sharma is an articulate and efficient lawyer with demonstrated experience in
                   litigation and banking dispute resolution in its diverse manifestations across various areas of law
                   including securities law and criminal law. <br /> He has gained invaluable experience under the guidance of
                   Advocate Rizwan Siddiquee from the year October 2020 to November 2021. During his tenure with Advocate
